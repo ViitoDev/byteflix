@@ -13,8 +13,8 @@ Projeto de estudo em Java que simula funcionalidades básicas de uma plataforma 
 Requer JDK 17 ou superior (o projeto usa text blocks).
 
 ```bash
-javac -d out src/*.java
-java -cp out Main
+javac -d out src/byteflix/*.java
+java -cp out byteflix.Main
 ```
 
 ## Projeto relacionado

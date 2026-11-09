@@ -1,3 +1,5 @@
+package byteflix;
+
 import java.util.Scanner;
 
 public class Reading {

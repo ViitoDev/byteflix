@@ -6,7 +6,6 @@ public class Main {
         movie1.name = "Avengers: Endgame";
         movie1.releaseYear = 2019;
 
-        System.out.println(movie1.name);
-        System.out.println(movie1.releaseYear);
+        movie1.showMovie();
     }
 }

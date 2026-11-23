@@ -1,6 +1,6 @@
 package byteflix.models;
 
-public class Serie {
+public class Serie extends Title{
     private int seasons;
     private boolean active;
     private int seasonEpisodes;
@@ -36,5 +36,10 @@ public class Serie {
 
     public void setMinutesPerEpisode(int minutesPerEpisode) {
         this.minutesPerEpisode = minutesPerEpisode;
+    }
+
+    @Override
+    public int getScreenTime() {
+        return seasons * seasonEpisodes * minutesPerEpisode;
     }
 }

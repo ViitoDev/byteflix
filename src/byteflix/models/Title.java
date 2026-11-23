@@ -12,6 +12,14 @@ public class Title {
         return totalRating;
     }
 
+    public int getScreenTime() {
+        return screenTime;
+    }
+
+    public void setScreenTime(int screenTime) {
+        this.screenTime = screenTime;
+    }
+
     public void setReleaseYear(int releaseYear) {
         this.releaseYear = releaseYear;
     }

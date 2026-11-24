@@ -2,6 +2,7 @@ package byteflix;
 
 import byteflix.models.Movie;
 import byteflix.models.Serie;
+import byteflix.services.TimeCalculator;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,5 +35,13 @@ public class Main {
 
         serie2.showMovie();
         System.out.println("Screen time to binge: " + serie2.getScreenTime() + " minutes");
+
+        movie1.setScreenTime(181);
+
+        TimeCalculator calculator = new TimeCalculator();
+        calculator.timerInclude(movie1);
+        calculator.timerInclude(serie1);
+        calculator.timerInclude(serie2);
+        System.out.println("Total screen time: " + calculator.getTimer() + " minutes");
     }
 }
